@@ -43,6 +43,7 @@ cd DLOps && python3 download_model.py -m "damoyolo_tinynasL25_S.pth"
 
 ## 6. Run inference and test
 ```
+sed -i -e 's/\r$//' run.sh
 ./run.sh
 ```
 
