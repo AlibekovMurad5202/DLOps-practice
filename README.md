@@ -5,7 +5,9 @@ Source of original project: [DAMO-YOLO](https://github.com/tinyvision/DAMO-YOLO.
 PapersWithCode: [DAMO-YOLO: A Report on Real-Time Object Detection Design](https://paperswithcode.com/paper/damo-yolo-a-report-on-real-time-object)
 
 > __NOTE__: If you don't have Docker, install it using [documentation](https://docs.docker.com/get-docker/)
+
 > __NOTE__: Available only for Windows and Linux!
+
 > __NOTE__: If the inference of the model causes an error for you, it may be worth updating the paths in `download_model.py`
 
 ## 1. Clone repo
