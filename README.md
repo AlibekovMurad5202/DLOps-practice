@@ -23,12 +23,13 @@ docker build -t damoyolo .
 ## 3. Run docker image
 Ubuntu:
 ```
-docker run -it -v "$(pwd)":/YOLO damoyolo
+docker run -it -v "$(pwd)":/DLOps damoyolo
 ```
 Windows:
 ```
-docker run -it -v <path_to_DLOps-practice>:/YOLO damoyolo
+docker run -it -v <path_to_DLOps-practice>:/DLOps damoyolo
 ```
+> Example (for Windows): `docker run -it -v "C:\Users\murad\Desktop\ITMM\tmp\DLOps-practice":/DLOps damoyolo`
 
 ## 4. Activate environment
 ```
