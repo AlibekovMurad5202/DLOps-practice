@@ -4,48 +4,48 @@ Source of original project: [DAMO-YOLO](https://github.com/tinyvision/DAMO-YOLO.
 
 PapersWithCode: [DAMO-YOLO: A Report on Real-Time Object Detection Design](https://paperswithcode.com/paper/damo-yolo-a-report-on-real-time-object)
 
-> __NOTE__: If you don't have Docker, install it using [documentation](https://docs.docker.com/get-docker/)
-
+> __NOTE__: If you don't have Docker, install it using [documentation](https://docs.docker.com/get-docker/)!
+>
 > __NOTE__: Available only for Windows and Linux!
-
-> __NOTE__: If the inference of the model causes an error for you, it may be worth updating the paths in `download_model.py`
+>
+> __NOTE__: If the inference of the model causes an error for you, it may be worth updating the paths in `download_model.py`!
 
 ## 1. Clone repo
 ```
 git clone https://github.com/AlibekovMurad5202/DLOps-practice.git && cd DLOps-practice
 ```
 
-## 1. Build docker image
+## 2. Build docker image
 ```
 docker build -t damoyolo .
 ```
 
-## 2. Run docker image
+## 3. Run docker image
 Ubuntu:
 ```
-docker run -it -v "$(pwd)":/YOLO damoyolo bash
+docker run -it -v "$(pwd)":/YOLO damoyolo
 ```
 Windows:
 ```
-docker run -it -v <path_to_DLOps-practice>:/YOLO damoyolo bash
+docker run -it -v <path_to_DLOps-practice>:/YOLO damoyolo
 ```
 
-## 3. Activate environment
+## 4. Activate environment
 ```
 conda activate yolo_env && source DAMO-YOLO-env/bin/activate
 ```
 
-## 4. Download pretrained model and reference data from Google Drive
+## 5. Download pretrained model and reference data from Google Drive
 ```
 cd DLOps && python3 download_model.py -m "damoyolo_tinynasL25_S.pth"
 ```
 
-## 5. Run inference and test
+## 6. Run inference and test
 ```
 ./run.sh
 ```
 
-## 6. Close docker
+## 7. Close docker
 ```
 exit
 docker ps -a
