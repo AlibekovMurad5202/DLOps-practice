@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3
+FROM docker.io/continuumio/miniconda3
 
 RUN apt-get update && \
     apt-get install python3 -y && \

@@ -41,9 +41,10 @@ conda activate yolo_env && source DAMO-YOLO-env/bin/activate
 cd DLOps && python3 download_model.py -m "damoyolo_tinynasL25_S.pth"
 ```
 
-## 6. Run inference and test
+## 6. Prepare and run inference and test
 ```
 sed -i -e 's/\r$//' run.sh
+chmod +x run.sh
 ./run.sh
 ```
 
